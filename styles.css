@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+:root {
+  --Primary-color-dark-cyan: hsl(158, 36%, 37%);
+  --Sec-color-cream: hsl(30, 38%, 92%);
+  --Neutral-very-dark-blue: hsl(212, 21%, 14%);
+  --Neutral-dark-grayish-blue: hsl(228, 12%, 48%);
+  --Neutral-white: hsl(0, 0%, 100%);
+}
+
+html {
+  background-color: var(--Sec-color-cream);
+}
+
+body {
+  background-color: var(--Neutral-white);
+  display: flex;
+  margin: 15% auto;
+  width: 60%;
+  height: 100%;
+  border-radius: 10px 10px;
+}
+.card {
+  width: 100%;
+}
+
+img {
+  border-radius: 10px 0 0 10px;
+  display: flex;
+  object-fit: cover;
+  height: 100%;
+  width: 250px;
+}
+
+.description {
+  padding: 25px;
+}
+
+.description .title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: lighter;
+  font-size: 0.8rem;
+  letter-spacing: 0.3rem;
+  padding-bottom: 20px;
+}
+
+.description .name {
+  font-family: "Fraunces", sans-serif;
+  font-size: 1.9rem;
+  text-align: left;
+  line-height: 2rem;
+  padding-bottom: 20px;
+}
+
+.description .caption-main {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8rem;
+  text-align: left;
+  line-height: 1.2rem;
+  padding-bottom: 10px;
+}
+
+.description .price {
+  font-family: "Fraunces", sans-serif;
+  color: var(--Primary-color-dark-cyan);
+}
+
+.description .caption-sec {
+  font-family: "Fraunces", sans-serif;
+  font-size: 0.8rem;
+  text-decoration: line-through;
+  text-align: right;
+  margin-top: -27px;
+  margin-left: -30px;
+  color: var(--Neutral-dark-grayish-blue);
+  padding-bottom: 30px;
+}
+
+button {
+  background: var(--Primary-color-dark-cyan);
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: var(--Neutral-white);
+}
